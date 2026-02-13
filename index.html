@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgriTrade | Smart Farming Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌾 AgriTrade</h1>
+    <p>Direct Farmer to Buyer Marketplace</p>
+</header>
+
+<nav>
+    <button onclick="showSection('market')">Market</button>
+    <button onclick="showSection('login')">Login</button>
+</nav>
+
+<section id="market">
+    <h2>Available Crops</h2>
+    <div class="card">
+        <h3>Basmati Rice</h3>
+        <p>Price: ₹3400 / quintal</p>
+        <p>Location: Haryana</p>
+        <button onclick="inquiry('Basmati Rice')">Send Inquiry</button>
+    </div>
+
+    <div class="card">
+        <h3>Organic Wheat</h3>
+        <p>Price: ₹2600 / quintal</p>
+        <p>Location: MP</p>
+        <button onclick="inquiry('Organic Wheat')">Send Inquiry</button>
+    </div>
+</section>
+
+<section id="login" class="hidden">
+    <h2>User Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+</section>
+
+<footer>
+    <p>© 2025 AgriTrade | Developed by Harsh</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
